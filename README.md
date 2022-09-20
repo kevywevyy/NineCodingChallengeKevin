@@ -33,3 +33,21 @@ The version of nodejs is v16.14.0.
 The version of npm is 8.3.1.
 1. Once the node version is installed, in the root project directory run `npm install` to install the packages necessary to run the project
 2. After the packages are installed, run `npm start` to start the server on localhost port 8888 which you can access at `localhost:8888`
+
+
+### How to run the service
+You can run the POST request via Postman or curl command in your own terminal.
+
+#### Postman
+Create a new HTTP Request with the POST method. In the URL you will need to enter: https://ninecodingchallenge-kevin.herokuapp.com/
+In the body, you can select the binary option which allows you to select the following files to parse through: 
+`payload.json`
+`invalidPayload.json`
+`noPayloadField.json`
+and then click on the Send button to see the response.
+
+#### Curl
+Using the curl command in your own terminal, simply enter in:
+`curl --request POST https://ninecodingchallenge-kevin.herokuapp.com --header "Content-Type: application/json" --data "@payload.json"`
+`curl --request POST https://ninecodingchallenge-kevin.herokuapp.com --header "Content-Type: application/json" --data "@invalidPayload.json"`
+`curl --request POST https://ninecodingchallenge-kevin.herokuapp.com --header "Content-Type: application/json" --data "@noPayloadField.json"`
