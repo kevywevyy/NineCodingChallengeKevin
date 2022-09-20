@@ -47,10 +47,10 @@ In the body, you can select the binary option which allows you to select the fol
 and then click on the Send button to see the response.
 
 #### Curl
-Using the curl command in your own terminal, simply enter in:
-For valid payload:
-`curl --request POST https://ninecodingchallenge-kevin.herokuapp.com --header "Content-Type: application/json" --data "@payload.json"`
-For invalid JSON:
-`curl --request POST https://ninecodingchallenge-kevin.herokuapp.com --header "Content-Type: application/json" --data "@invalidPayload.json"`
-For invalid field:
-`curl --request POST https://ninecodingchallenge-kevin.herokuapp.com --header "Content-Type: application/json" --data "@noPayloadField.json"`
+Using the curl command in your own terminal, simply enter in:  
+For valid payload:  
+`curl --request POST https://ninecodingchallenge-kevin.herokuapp.com --header "Content-Type: application/json" --data "@payload.json"`  
+For invalid JSON:  
+`curl --request POST https://ninecodingchallenge-kevin.herokuapp.com --header "Content-Type: application/json" --data "@invalidPayload.json"`  
+For invalid field:  
+`curl --request POST https://ninecodingchallenge-kevin.herokuapp.com --header "Content-Type: application/json" --data "@noPayloadField.json"`  
